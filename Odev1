@@ -1,0 +1,17 @@
+veri1 = int(input("Lütfen tam bir sayı giriniz :"))
+veri2 = float(input("Lütfen ondalıklı bir sayı giriniz :"))
+veri3 = str(input("Lütfen ifade giriniz :"))
+veri4 = bool(input("Lütfen giriş yapınız E/H :"))
+veri5 = set(input("Listeye eklecek verileri giriniz :"))
+
+veri11 = type(veri1)
+veri12 = type(veri2)
+veri13 = type(veri3)
+veri14 = type(veri4)
+veri15 = type(veri5)
+
+print(f'1.Girilen Veri Tipi : {veri11}')
+print(f'2.Girilen Veri Tipi : {veri12}')
+print(f'3.Girilen Veri Tipi : {veri13}')
+print(f'4.Girilen Veri Tipi : {veri14}')
+print(f'5.Girilen Veri Tipi : {veri15}')
