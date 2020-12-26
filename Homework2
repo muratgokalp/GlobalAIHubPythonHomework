@@ -1,0 +1,18 @@
+kisilistesi = []
+
+isim = input("İsminiz nedir? ")
+soyad = input("Soyadınız nedir? ")
+yasiniz = int(input("Yaşınız nedir? "))
+dtarihi = input("Dogum Tarihiniz nedir? ")
+
+kisilistesi.append(isim)
+kisilistesi.append(soyad)
+kisilistesi.append(yasiniz)
+kisilistesi.append(dtarihi)
+
+print(kisilistesi)
+
+if yasiniz > 18:
+    print(" you can go out the street")
+if yasiniz < 18:
+    print(" you can't go out because it's too dangerous")
