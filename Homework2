@@ -1,18 +1,28 @@
+giris = int(input("kişi miktarı :"))
 kisilistesi = []
 
-isim = input("İsminiz nedir? ")
-soyad = input("Soyadınız nedir? ")
-yasiniz = int(input("Yaşınız nedir? "))
-dtarihi = input("Dogum Tarihiniz nedir? ")
+for i in range(0,giris):
+    isim = input("İsminiz nedir? ")
+    soyad = input("Soyadınız nedir? ")
+    yasiniz = int(input("Yaşınız nedir? "))
+    dtarihi = int(input("Dogum Tarihiniz nedir? "))
 
-kisilistesi.append(isim)
-kisilistesi.append(soyad)
-kisilistesi.append(yasiniz)
-kisilistesi.append(dtarihi)
+    kisilistesi.append(isim)
+    kisilistesi.append(soyad)
+    kisilistesi.append(yasiniz)
+    kisilistesi.append(dtarihi)
 
+print("Girişi Yapılan Liste : ")
 print(kisilistesi)
 
-if yasiniz > 18:
-    print(" you can go out the street")
-if yasiniz < 18:
-    print(" you can't go out because it's too dangerous")
+
+son_kayit=len(kisilistesi)
+liste2 = kisilistesi
+son_kayit=len(liste2)
+
+i = 2 #verisi girilen ilk kişinin yaşının bulunduğu index
+for i in range(i, son_kayit+1, 4):
+    if liste[i] > 18:
+        print("you can go out the street")
+    if liste[i] < 18:
+        print("you can't go out because it's too dangerous")
