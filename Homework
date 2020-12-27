@@ -1,0 +1,30 @@
+count=0
+while count < 3:
+    orenciad = input("Girişi Yapılacak \n Öğrenicinin Adı : ") 
+    orencisoyad = input("Girişi Yapılacak \n Öğrencinin Şifresi : ") 
+    if orenciad == 'murat' and orencisoyad == 'kaya':
+        print('Giriş Başarılıdır')
+        break
+    else:
+        print('Öğrenci adı veya soyadı yanlış. Yeniden deneyin.')
+        count += 1
+
+
+
+kurslistesi = []
+count=0
+while count < 6:
+    kurs1 = input("Alınacak kurs ismini giriniz ")
+    kurslistesi.append(kurs1)
+    count += 1
+
+print(kurslistesi)
+
+kurslistesi = []
+count=0
+while count < 2:
+    kurs1 = input("Alınacak kurs ismini Giriniz ")
+    kurslistesi.append(kurs1)
+    count += 1
+print(kurslistesi)
+Dict = kurslistesi
